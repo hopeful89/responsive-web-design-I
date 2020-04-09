@@ -418,6 +418,10 @@ footer {
 
 @media (max-width: 500px) {
 
+	body {
+		margin: 0;
+	}
+
 	.container-img {
 		margin: 0 auto;
 		border-bottom: 1px solid black;
@@ -463,7 +467,7 @@ footer {
 	}
 
 	#btnStart {
-		width: 29vw;
+		width: 30vw;
 	}
 
 
