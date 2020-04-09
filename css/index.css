@@ -91,12 +91,10 @@ body {
 
 
 .navagation {
-	margin: 5% 0;
+	height: 10vw;
 	width:100%;
 	flex-flow: row wrap;
 	align-items: center;
-	border-radius: 15px;
-	padding: 0 1%;
 	justify-content: space-between;
 }
 
@@ -120,35 +118,36 @@ nav a:hover {
 
 /*--------------------------  Home Header    ------------------------ */
 h2 {
-	font-weight: bold;;
+	font-weight: bold;
 }
 
 .header-main {
-	padding: 5% 0;
-	justify-content: space-between;
+	padding: 2vh 0;
+	margin: 0 0 4vh 0;
+	justify-content: flex-end;
 }
 
 .header-main h1{
 	text-align: center;
 	align-self: center;
-	min-width: 35%;
-	font-size: 350%;
-	font-weight: 700;
+	min-width: 35vw;
+	font-size: 5.5vw;
+	font-weight: bold;
 	margin: 0;
-	transform: scaleY(1.3);
-	transform: scaleX(.9);
+	line-height: 1.2;
+	transform: scaleX(.8);
 }
 
 header img {
-	width: 46%;
+	width: 35vw;
 }
 
 #btnStart {
-	width: 150px;
+	width: 16vw;
 	background: white;
 	border: 1px solid black;
 	line-height: 1.6;
-	font-size: 16px;
+	font-size: 1rem;
 	transform: scaleX(1.3)
 }
 
@@ -162,35 +161,39 @@ header img {
 
 
 .upperContent, .lowerContent {
-	padding: 3% 0;
 	border-top: 2px solid black;
 	text-align: left;
 }
 
 
 .upperContent div, .lowerContent div {
-	margin-bottom:3%;
-	padding-right: 1%;
+	margin:3vh 0;
+	padding-right: 1vw;
 }
 
 .upperContent {
-	padding: 2% 0;
+	padding: 2vh 0;
 }
 
 .upperContent div {
-	margin-bottom: 2%;
+	margin-bottom: 2vh;
 }
 
 .middle-img{
 	background: url(../img/mid-page-accent.jpg);
 	background-size: cover;
-	height: 200px;
+	height: 20vh;
 	width: 100%;
 }
 
 .lowerContent {
+	justify-content: space-between;
 	border-top: none;
 	border-bottom: 2px solid black;
+}
+
+.lowerContent div{
+	width: 28vw;
 }
 
 
@@ -199,16 +202,16 @@ header img {
 
 .contactInfo {
 	text-align: left;
-	padding-top: 4%;
+	padding-top: 4vh;
 }
 
 .contactInfo div {
-	margin-bottom: 4%;
+	margin-bottom: 4vh;
 }
 
 footer {
 	text-align: center;
-	margin: 0 0 5% 0;
+	margin: 0 0 5vh 0;
 }
 
 /*-------------------------- Services Header ------------------- */
@@ -369,6 +372,11 @@ footer {
 
 /* -------------------Media Queries 800px----------------------*/
 @media (max-width: 800px) {
+
+	body {
+		margin: 0 3vw;
+	}
+
 	.logo {
 		display: none;
 		visibility: hidden;
@@ -376,65 +384,65 @@ footer {
 
 	.top-img {
 		display: flex;
-		margin: 4% auto;
+		margin: 3vh auto;
 	}
 
 	.navagation {
 		width: 120%;
 	}
 
-	header {
-		
-		transform: scale(.8);
-		line-height: 1.2;
-		
-	}
-
 	.header-main {
 		justify-content: center;
 		padding: 0;
-		margin: 0 0 4% 0;
+		margin: 4vh 0 7vh 0;
+	}
+
+	.header-main h1 {
+		font-size: 4em;
 	}
 
 	header img {
 		display: none;
 	}
 
-	#btnStart {
-		line-height: 2;
+	.lowerContent div{
+		width: 30vw;
 	}
+
+	.contactInfo {
+		margin: 4vh 0 0 1vw;
+	}
+
 
 }
 
 @media (max-width: 500px) {
 
 	.container-img {
+		margin: 0 auto;
 		border-bottom: 1px solid black;
 		width: 100%;
 	}
 	
 	.top-img {
 		margin: 0 auto;
-		padding: 3%;
+		padding: 2vh;
 	}
 	
 	.navagation {
 		flex-direction: column;
 		justify-content: space-around;
-		margin: 0 0 0 0;
-		height: 35%;
+		height: 35vh;
 		width: 100%;
-		
 	}
 
 	nav a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 130%;
+		font-size: 1.5rem;
+		height: 5vh;
 		width: 100%;
-		height: 14%;;
-		
 	}
 
 	.nav-item {
@@ -446,32 +454,42 @@ footer {
 	}
 
 	header {
-		margin: 0 0 2% 0;
+		margin: 0 0 2vh 0;
+
 	}
+
+	.header-main h1 {
+		font-size: 3rem;
+	}
+
+	#btnStart {
+		width: 29vw;
+	}
+
 
 	.upperContent, .lowerContent {
 		flex-direction: column;
 		justify-content: space-around;
-		height: 32%;
+	}
+
+	.lowerContent div {
+		width: 100%;
+	}
+
+	.middle{
+		display:flex;
 	}
 
 	.middle-img {
-		height: 10%;
+		height: 10vh;
 	}
 
 	.lowerContent {
-		height: 50%;
 		padding: 0;
 	}
 
-	.contactInfo, footer {
-		margin: 2% 0;
-		font-size: 14px;
+	.upperContent, .lowerContent, .middle-img, .contactInfo{
+		margin: 0 3vw;		
 	}
 
-	footer {
-		padding: 5%;
-	}
-
-	
 }
