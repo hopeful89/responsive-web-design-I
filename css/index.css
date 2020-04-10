@@ -219,13 +219,13 @@ footer {
 
 .services-header {
 	border-bottom: 2px solid black;
-	padding: 3% 0;
-	margin-bottom: 2%;
+	padding: 4vh 0;
+	margin-bottom: 2vh;
 }
 
 .services-header h2 {
-	font-size: 125%;
-	font-weight: 900;
+	font-size: 1.25rem;
+	font-weight: bolder;
 }
 
 .services-header-img {
@@ -372,7 +372,7 @@ footer {
 
 /* -------------------Media Queries 800px----------------------*/
 @media (max-width: 800px) {
-
+/* --------------------Home Page------------------------------- */
 	body {
 		margin: 0 3vw;
 	}
@@ -413,11 +413,26 @@ footer {
 		margin: 4vh 0 0 1vw;
 	}
 
+	/* --------------------------------Services page---------------------------------- */
+	.services-header-img {
+		display: flex;
+
+	}
+
+	.content {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.box {
+		width: 100%;
+		margin: 1vh 0;
+	}
 
 }
 
 @media (max-width: 500px) {
-
+	/* ---------------------------------Home Page------------------------------------ */
 	body {
 		margin: 0;
 	}
@@ -496,4 +511,28 @@ footer {
 		margin: 0 3vw;		
 	}
 
+	/* -------------------------Services Page -------------------------- */
+	.services-header-img {
+		display: none;
+	}
+
+	.services-header h2 {
+		text-align: center;
+	}
+	
+	.main-container {
+		margin: 0 2vw;
+	}
+
+	.box {
+		align-items: center;
+	}
+
+	.box button {
+		width: 30vw;
+	}
+
+	.footer-box p {
+		margin: 1vh 0;
+	}
 }
